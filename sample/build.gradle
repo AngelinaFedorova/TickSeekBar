@@ -1,15 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    namespace 'com.warkiz.tickseekbar.sample'
+    compileSdkVersion 34
     defaultConfig {
         applicationId "com.warkiz.tickseekbar.sample"
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdkVersion 21
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -19,7 +26,8 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':tickseekbar')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
 }

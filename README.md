@@ -4,6 +4,7 @@
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 
 This is a customizable SeekBar library on Android. Also, If you need Indicator to show top of seek bar, please see [the other library](https://github.com/warkiz/IndicatorSeekBar). [  中文.md ](https://github.com/warkiz/TickSeekBar/blob/master/README_zh.md)
+Remove jcenter from this fork
 
 
 ## OverView
@@ -22,7 +23,7 @@ This is a customizable SeekBar library on Android. Also, If you need Indicator t
 ## Setup
 
 ```gradle
-implementation 'com.github.warkiz.tickseekbar:tickseekbar:0.1.4'
+implementation 'com.github.AngelinaFedorova:TickSeekBar:1.0'
 ```
 
 ## Usage
